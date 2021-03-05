@@ -1,0 +1,139 @@
+html {
+  background-color: #FFFFFF;
+  background-image: linear-gradient(270deg,rgb(200,200,200) 0%,rgb(200,200,200) 100%);
+  background-image: -o-linear-gradient(270deg,rgb(200,200,200) 0%,rgb(200,200,200) 100%);
+  background-image: -moz-linear-gradient(270deg,rgb(200,200,200) 0%,rgb(200,200,200) 100%);
+  background-image: -webkit-linear-gradient(270deg,rgb(200,200,200) 0%,rgb(200,200,200) 100%);
+  background-image: -ms-linear-gradient(270deg,rgb(200,200,200) 0%,rgb(200,200,200) 100%);
+  -webkit-font-smoothing: antialiased;
+  font-size: 16px;
+}
+
+body {
+  margin: 0 auto;
+  padding: 2em 2em 4em;
+  max-width: 1024px;
+  font-family: "ralewayregular";
+  font-size: 100%;
+  line-height: 1.5em;
+  background-color: #FFFFFF;
+}
+
+
+table,th,td,a
+{
+  border: 1px transparent;
+  border-spacing: 10px;
+  text-align: left;
+  text-decoration: none;
+  vertical-align: top;
+  background-color: transparent;
+  color: #333F48;
+  font: "ralewayregular";
+  font-weight: normal;
+}
+
+
+
+/* menu for navigation */
+#navbar ul {
+  margin: 0;
+  padding: 5px; 
+  list-style-type: none;
+  text-align: left; 
+} 
+
+#navbar ul li {  
+  display: inline; 
+  vertical-align: bottom;
+} 
+
+#navbar ul li a {
+  padding: .2em 1em; 
+  color: #333F48; 
+  vertical-align: bottom;
+} 
+
+#navbar ul li a:hover {
+  color: #D83B31;
+  vertical-align: bottom;
+  text-decoration: underline;
+} 
+
+#navbar a:active {
+  font-weight: bold;
+}
+
+/* make menu items bold when selected 
+   = match with page body class */
+body.index li.index a,
+body.call li.call a,
+body.speakers li.speakers a,
+body.program li.program a,
+body.organizers li.organizers a {
+  font-weight: bold;
+}
+body li a{
+  font-weight: normal;
+}
+
+/* max width page content to 90% for mobile */
+div.page_content {
+  padding: 0px 10px 10px 10px;
+  max-width: 90%;
+}
+
+table.program th {
+  font-weight: bold;
+  background-color: #e6e6e6;
+}
+
+table.program th, td {
+  padding: 0.5em 0.5em 0.5em 1em; /* top right bottom left */
+}
+
+table.program {
+  border-collapse: collapse;
+  border-spacing: 0; 
+}
+
+table.speakers tr, td {
+  border: 1px solid #000;
+}
+
+tr.break {
+  background-color: #f2f2f2;
+}
+
+a.speakers {
+  color: #ab2a21;
+}
+
+/* raleway-regular - latin */
+@font-face {
+    font-family: 'ralewayregular';
+    src: local('../fonts/ralewayregular'), local('../fonts/raleway-regular-webfont'),
+       url('../fonts/raleway-regular-webfont.woff2') format('woff2'),
+       url('../fonts/raleway-regular-webfont.woff') format('woff');    
+    font-weight: normal;
+    font-style: normal;       
+}
+/* raleway-700 - latin */
+@font-face {
+    font-family: 'ralewaybold';
+    src: local('../fonts/ralewaybold'), local('../fonts/raleway-bold-webfont'),
+       url('../fonts/raleway-bold-webfont.woff2') format('woff2'),
+       url('../fonts/raleway-bold-webfont.woff') format('woff');    
+    font-weight: 900;
+    font-style: normal;          
+}
+
+footer {
+  font-weight: 100;
+  font-size: 50%;
+  text-align: right;
+  vertical-align: bottom;
+  font: "Arial";
+  color: #333F48;
+  background-color: transparent;
+}
